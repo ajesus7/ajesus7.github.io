@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Page for Aidan's Website">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02e0cbdd6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation Div-->
+    <header>
+        <a href="/index.html">
+            <img class="logo" src="/personal_logo.svg" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/hire_me.html">Hire Me</a></li>
+                <li><a href="/about_me.html">About Me</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/contact.html"><button>Contact</button></a>
+    </header>
+
+    <div class="contact-page-content">
+
+        <!--Social Media Icon Links-->
+        <div class="social-icons">
+
+            <h1 class="follow-socials">Follow my Socials!</h1>
+            <a id="fa-youtube" href="https://www.youtube.com/channel/UCqC2fR6XAsZ_BGLvYdDHnOg" target="_blank">
+                <i class="fa-brands fa-youtube fa-3x"></i>
+            </a>
+    
+            <a id="fa-instagram" href="https://www.instagram.com/ajn.design/" target="_blank">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+            
+            <a id="fa-linkedin" href="https://www.linkedin.com/in/aidannesbitt/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            
+        </div>
+        
+        <div class="form-container">
+            <!-- Add a form action-->
+            <h1 class="contact-me">Contact Me!</h1>
+            <form id="form1">
+                
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" name="firstname" placeholder="Your First Name">
+                
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" name="lastname" placeholder="Your Last Name">
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your Email">
+                
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Message"></textarea>
+                
+                <input type="submit" id="submit-button" value="Submit">
+                
+            </form>    
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer id="italics">
+    
+        <p>@ 2022 Aidan Nesbitt Design. All Rights Reserved</p>
+        <p>this website was fueled by Yerba Mate, Youtube tutorials, StackOverflow, and W3schools</p>
+    
+    </footer>
+    
+</body>
+</html>
