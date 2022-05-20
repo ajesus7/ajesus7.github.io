@@ -117,3 +117,14 @@ ul#location {
 .text-gap-bottom-smaller {
     margin-bottom: 1rem;
 }
+
+#menu-button {
+    text-decoration: none;
+    color: var(--dark-color);
+    background: var(--accent-color-light);
+    padding: 0.5rem;
+}
+
+a#menu-button {
+    margin-top: 3rem;
+}
