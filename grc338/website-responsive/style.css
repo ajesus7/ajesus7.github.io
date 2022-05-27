@@ -1,0 +1,344 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+:root {
+
+    --dark-color: #1e1e1e;
+    --light-color: #fafafa;
+    --accent-color-dark: #352913;
+    --accent-color-light: #ACB992;
+
+    --header-font: gravesend-sans,sans-serif;
+    --descriptor-font: proforma,serif;
+
+}
+
+body {
+    background: var(--light-color);
+    color: var(--dark-color);
+    font-family: var(--descriptor-font);
+    font-size: 1em;
+    font-weight: 500;
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+main {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+header {
+    background: var(--dark-color);
+    width: 100%;
+
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+nav {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+nav ul {
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.4em;
+    list-style-type: none;  
+}
+
+nav li a {
+    font-family: var(--header-font);
+    font-size: .8em;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+#mobile-logo {
+    width: 85%;
+}
+
+.image-content {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: .25em;
+}
+
+ul#menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    list-style-type: none;
+    margin: auto;
+    border-top: 5px solid var(--accent-color-light);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+ul#menu li, ul#location li{
+    margin-bottom: 1em;
+}
+
+p.price {
+    margin-bottom: .1em;
+    color: var(--accent-color-light);
+}
+
+ul#location {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+}
+
+#location-description {
+    margin-bottom: 2em;
+}
+
+.accent-light {
+    color: var(--accent-color-light);
+}
+
+.accent-light-nav {
+    color: var(--accent-color-light);
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid var(--accent-color-light);
+}
+
+.text-gap-bottom {
+    margin-bottom: 1.5rem;
+} 
+
+#fullscreen-image {
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+.text-gap-bottom-smaller {
+    margin-bottom: 1rem;
+}
+
+#menu-button {
+    text-decoration: none;
+    color: var(--dark-color);
+    background: var(--accent-color-light);
+    padding: 0.5rem;
+}
+
+a#menu-button {
+    padding: 0.7em 2em;
+}
+
+ul a {
+    color: var(--accent-color-light);
+}
+
+.item-image-holder {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+ul#menu li:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+ul#menu li {
+    background: var(--dark-color);
+    border-radius: 15px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: var(--light-color);
+    margin: auto;
+}
+
+ul#menu li h3, ul#menu li p {
+    margin-left: 1rem;
+}
+
+p.description {
+    padding-bottom: 1.2rem;
+    max-width: 300px;
+    font-style: italic;
+}
+
+div.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+section.location-page-grid, #about-us-grid, #fullscreen-image {
+    border-top: 5px solid var(--accent-color-light);
+    padding-top: 2em;
+}
+
+footer {
+    background: var(--dark-color);
+    height: 4em;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    font-size: .9em;
+}
+
+.gap-bigger {
+    padding-bottom: 2em;
+}
+
+#front-page-main {
+    margin: 0;
+}
+
+.about-us, .location-front-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    height: 30em;
+}
+
+.header-with-text {
+    font-weight:600;
+}
+
+#about-us-square {
+    width: 12em;
+}
+
+.square-image-container, .square-image-container-barista {
+    order: 1;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+.wrapper-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 25em) {
+    ul#menu {
+        grid-template-columns: 1fr 1fr;
+    }
+    nav ul {
+        font-size: 1.2em;
+        width: 15em;
+    }
+
+    header {
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media only screen and (min-width: 28em) {
+    .about-us, .location-front-page {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .square-image-container, .square-image-container-barista {
+        order: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fullscreen-image {
+        padding-bottom: 0;
+    }
+
+    .about-us, .location-front-page{
+        height: 25em;
+    }
+}
+
+@media only screen and (min-width: 45em) {
+    
+    body {
+        font-size: 1.1em;
+    }
+    ul#menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+        margin-bottom: 2.5em;
+    }
+    
+}
+
+@media only screen and (min-width: 55em) {
+    div.container {
+        width: 49.5em;
+        margin: auto;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #mobile-logo {
+        width: 46.75em;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 50em 1fr;
+    }
+
+    .header-container {
+        grid-column: 2;
+    }
+    nav {
+        width: 46.75em;
+    }
+
+    section.location-page-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1.5em;
+    }
+
+    #about-us-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-fixed {
+        position: fixed;
+    }
+}
+
