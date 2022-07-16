@@ -1,0 +1,218 @@
+/*CSS document*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aktiv Grotesk', sans-serif;
+    color: #0D1321;
+}
+
+div.container, .container-2 {
+    max-width: 48em;
+    margin: auto;
+    padding: 1em 1em;
+}
+
+.header-background {
+    background: rgb(222, 222, 222);
+    padding: 0 1em;
+}
+
+#story-link {
+    color: rgb(205, 44, 25);
+    text-decoration: underline;
+}
+
+.story-images {
+    width: 80%;
+}
+header {
+    max-width: 48em;
+    margin: 0 auto;
+    background: rgb(222, 222, 222);
+    display: flex;
+    flex-direction: column;
+}
+
+#this-story {
+    padding-left: 0.5em;
+}
+.left-column, .tertiary-stories-container {
+    border-top: 3px solid #0D1321;
+}
+
+article, aside {
+    border-top: 3px solid #0D1321;
+}
+
+h4 {
+    font-family: 'Tandelle', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    background: #0D1321;
+    width: 4em;
+    color: #FAF9F6;
+    padding-left: 0.4em;
+    text-transform: uppercase;
+
+}
+
+#recents {
+    width: 2.5em;
+    padding-left: .3em;
+}
+
+figure {
+    margin: 0;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+img {
+    width: 100%;
+    padding-bottom: 0.8em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul {
+    width: 30em;
+}
+ul li {
+    display: inline;
+    padding-right: 0.8em;
+}
+
+figcaption {
+    font-style: italic;
+    padding-bottom: 1.75em;
+}
+
+.logo {
+    width: 5em;
+    padding-top: 1.5em;
+}
+
+nav {
+    font-size: 0.8em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    width: 30em;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    line-height: 1em;
+    font-family: 'Aktiv-Grotesk', sans-serif;
+    font-style: bold;
+}
+
+.teaser-no-image h3 {
+    font-size: 1.5em;
+}
+
+.teaser-no-image p {
+    font-size: 1em;
+}
+
+.smaller-padding {
+    padding-bottom: 0.5em;
+}
+
+.second-header {
+    padding-bottom: 0.2em;
+}
+article p {
+    margin-bottom: 1.5em;
+}
+
+.section-end {
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #FAF2F0;
+}
+
+.quote-indent {
+    margin-left: 2em;
+}
+a {
+    text-decoration: none;
+    color: #0D1321;
+}
+
+.hero-story h3 {
+    color: rgb(205, 44, 25);
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+footer {
+    border-top: 2px solid #0D1321;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.bottom-padding {
+    padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 35em) {
+    header {
+        flex-direction: row;
+    }
+    nav {
+        position: relative;
+        top: 2em;
+        left: 4em;
+    }
+}
+@media only screen and (min-width: 48em) {
+    div.container {
+        max-width: 58em;
+    }
+    
+    .container-2 {
+        max-width: 58em;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-column-gap: 1.5em;
+    }
+
+    header {
+        max-width: 58em;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        grid-gap: 1.5em;
+    }
+
+    .secondary-stories-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 58em) {
+    header {
+        position: relative;
+        left: 1em;
+    }
+}
