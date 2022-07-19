@@ -52,8 +52,12 @@ header {
 }
 
 .left-column,
-.tertiary-stories-container, article, .gallery, .newsletter-container {
+.tertiary-stories-container, article, aside, .gallery, .box1, .bonus-poster {
     border-top: 3px solid #0d1321;
+}
+
+#bonus {
+    width: 5em;
 }
 
 h4 {
@@ -192,14 +196,13 @@ main.gallery {
     position: relative;
     overflow: hidden;
     max-width: 48em;
-    height: 70vh;
+    padding-bottom: calc(72% + 3em);
 }
 
 .thumbnails {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 1em;
-    border: 3px solid black;
     max-width: 48em;
 }
 
@@ -210,10 +213,10 @@ nav.thumbnails img {
 input:nth-of-type(1):checked~main.gallery figure:nth-of-type(1),
 input:nth-of-type(2):checked~main.gallery figure:nth-of-type(2),
 input:nth-of-type(3):checked~main.gallery figure:nth-of-type(3),
-input:nth-of-type(4):checked~main.gallery figure:nth-of-type(4) 
-input:nth-of-type(5):checked~main.gallery figure:nth-of-type(5) 
-input:nth-of-type(6):checked~main.gallery figure:nth-of-type(6) 
-input:nth-of-type(7):checked~main.gallery figure:nth-of-type(7) 
+input:nth-of-type(4):checked~main.gallery figure:nth-of-type(4), 
+input:nth-of-type(5):checked~main.gallery figure:nth-of-type(5), 
+input:nth-of-type(6):checked~main.gallery figure:nth-of-type(6), 
+input:nth-of-type(7):checked~main.gallery figure:nth-of-type(7), 
 input:nth-of-type(8):checked~main.gallery figure:nth-of-type(8) {
     opacity: 1;
 }
@@ -237,7 +240,7 @@ form {
 }
 
 ul.newsletter {
-    max-width: 36em;
+    max-width: 48em;
     list-style-type: none;
     margin-bottom: 2em;
     border: 2px solid #0d1321;
@@ -274,13 +277,11 @@ button {
 
 .form-image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    border: 2px solid black;
+    grid-template-rows: auto;
 }
 
 #form-filler {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -339,7 +340,15 @@ button {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1.5em;
     }
-
+    .newsletter-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1.5em;
+    }
+    #form-filler {
+        width: 80%;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 58em) {
