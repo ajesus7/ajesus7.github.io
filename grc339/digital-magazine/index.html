@@ -1,174 +1,187 @@
-<!doctype html>
-    <html>
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <link rel="stylesheet" href="https://use.typekit.net/xwq0kzc.css">
-            <title>The Daily Grid | Home</title>
+<!DOCTYPE html>
+<html>
 
-            <!-- Helpful meta tags to fight GitHub aggresive caching-->
-                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-                <meta http-equiv="Pragma" content="no-cache" />
-                <meta http-equiv="Expires" content="0" />
-            
-        </head>	
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xwq0kzc.css" />
+    <title>The Daily Grid | Home</title>
 
-        <body>
-            <div class="header-background">
-                <header>
-                    <a href="index.html">
-                        <h1> <img src="logo.svg" class="logo" alt="Logo of The Daily Grid."> </h1>
+    <!-- Helpful meta tags to fight GitHub aggresive caching-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+    <div class="header-background">
+        <header>
+            <a href="index.html">
+                <h1><img src="logo.svg" class="logo" alt="Logo of The Daily Grid." /></h1>
+            </a>
+            <nav class="main-header">
+                <ul class="nav">
+                    <!-- ★ Use as many sections as you want, but replace the dashed lines with actual names for the sections of the publication. You may keep them all linked to the pound symbol, though. -->
+                    <li><a href="#">Article Feed</a></li>
+                    <li><a href="#">Fonts</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="photogallery.html">Photo Gallery</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <main>
+            <div class="left-column">
+                <h4>Top Stories</h4>
+                <section class="hero-story">
+                    <!-- ★ Teaser for the main story. You may want to give it a class.-->
+                    <a href="mainstory.html">
+                        <figure>
+                            <img src="josef-muller.jpg"
+                                alt="A 2 page spread with a portrait of Josef Müller on the left page, and his name on the right page." />
+                        </figure>
+                        <h3>Josef Müller Brockmann</h3>
+                        <p class="smaller-padding">
+                            Josef Müller Brockmann was a major influence to the Swiss Style design movement. Click here
+                            to read more about him!
+                        </p>
+                        <p class="section-end">07.11.22</p>
                     </a>
-                    <nav>
-                        <ul class="nav">
-                            <!-- ★ Use as many sections as you want, but replace the dashed lines with actual names for the sections of the publication. You may keep them all linked to the pound symbol, though. -->
-                            <li><a href="#">Article Feed</a></li>
-                            <li><a href="#">Fonts</a></li>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">Article Submission</a></li>
-                            <li><a href="#">Forum</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                    
+                </section>
+
+                <div class="secondary-stories-container">
+                    <section class="teaser-image">
+                        <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
+                        <a href="#">
+                            <figure>
+                                <img src="teaser-posters.jpg" class="secondary-image"
+                                    alt="2 Swiss Grid System inspired posters." />
+                            </figure>
+                            <h3 class="second-header">A collection of grid system posters to inspire your next project.
+                            </h3>
+                            <p class="smaller-padding">
+                                Modern and historical grid system posters analzyed by our writers. This article also
+                                includes critiques from famous designers!
+                            </p>
+                            <p class="section-end">07.11.22</p>
+                        </a>
+                    </section>
+                    <section class="teaser-image">
+                        <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
+                        <a href="#">
+                            <figure>
+                                <img src="grids-in-real-life.jpeg" class="secondary-image"
+                                    alt="A birds eye view of a grid of city streets." />
+                            </figure>
+                            <h3 class="second-header">Grids In Daily Life</h3>
+                            <p class="smaller-padding">
+                                Design isn't the only place where you'll find grids! There are grids everywhere, and
+                                we'll talk about a few.
+                            </p>
+                            <p class="section-end">07.11.22</p>
+                        </a>
+                    </section>
+                    <section class="teaser-image">
+                        <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
+                        <a href="#">
+                            <figure>
+                                <img src="architecture.jpg" class="secondary-image"
+                                    alt="Looking up at vertically aligned balconies." />
+                            </figure>
+                            <h3 class="second-header">How the Grid System Has Influenced Modern Architecture</h3>
+                            <p class="smaller-padding">
+                                The Swiss Grid System has shown its influence in a myriad of modern architecture
+                                projects in recent histroy. Click to read more!
+                            </p>
+                            <p class="bottom-padding">07.11.22</p>
+                        </a>
+                    </section>
+                    <section class="teaser-image">
+                        <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
+                        <a href="#">
+                            <figure>
+                                <img src="ux-grids.jpg" class="secondary-image"
+                                    alt="White text over a black and grey grid that reads UI Grid Best Practices." />
+                            </figure>
+                            <h3 class="second-header">Best Practices for UI Design With Grids</h3>
+                            <p class="smaller-padding">
+                                A useful cheatsheet to remind yourself of UI best practices before you make your next
+                                wireframe.
+                            </p>
+                            <p class="bottom-padding">07.11.22</p>
+                        </a>
+                    </section>
+                </div>
             </div>
-            <div class="container">
-                <main>
-                    <div class="left-column">
-                        <h4>Top Stories</h4>
-                        <section class="hero-story"><!-- ★ Teaser for the main story. You may want to give it a class.-->
-                            <a href="mainstory.html">
-                                <figure>
-                                    <img src="josef-muller.jpg" alt="A 2 page spread with a portrait of Josef Müller on the left page, and his name on the right page.">
-                                </figure>
-                                    <h3>Josef Müller Brockmann</h3>
-                                    <p class="smaller-padding">
-                                        Josef Müller Brockmann was a major influence to the Swiss Style design movement. Click here to read more about him!
-                                    </p>
-                                    <p class="section-end">07.11.22</p>
-                            </a>    
-                        </section>
-                        
-                        <div class="secondary-stories-container">
-                            <section class="teaser-image"> <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
-                                <a href="#">
-                                    <figure>
-                                        <img src="teaser-posters.jpg" class="secondary-image" alt="2 Swiss Grid System inspired posters.">
-                                    </figure>
-                                        <h3 class="second-header">A collection of grid system posters to inspire your next project.</h3>
-                                        <p class="smaller-padding">
-                                            Modern and historical grid system posters analzyed by our writers. This article also includes critiques from famous designers!
-                                        </p>
-                                        <p class="section-end">07.11.22</p>
-                                </a>    
-                            </section>
-                            <section class="teaser-image"> <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
-                                <a href="#">
-                                    <figure>
-                                        <img src="grids-in-real-life.jpeg" class="secondary-image" alt="A birds eye view of a grid of city streets.">
-                                    </figure>
-                                        <h3 class="second-header">Grids In Daily Life</h3>
-                                        <p class="smaller-padding">
-                                            Design isn't the only place where you'll find grids! There are grids everywhere, and we'll talk about a few.
-                                        </p>
-                                        <p class="section-end">07.11.22</p>
-                                </a>    
-                            </section>
-                            <section class="teaser-image"> <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
-                                <a href="#">
-                                    <figure>
-                                        <img src="architecture.jpg"  class="secondary-image"alt="Looking up at vertically aligned balconies.">
-                                    </figure>
-                                        <h3 class="second-header">How the Grid System Has Influenced Modern Architecture</h3>
-                                        <p class="smaller-padding">
-                                            The Swiss Grid System has shown its influence in a myriad of modern architecture projects in recent histroy. Click to read more!
-                                        </p>
-                                        <p class="bottom-padding">07.11.22</p>
-                                </a>    
-                            </section>
-                            <section class="teaser-image"> <!-- ★ Example of a teaser with image.  You may want to give it a different class. -->
-                                <a href="#">
-                                    <figure>
-                                        <img src="ux-grids.jpg"  class="secondary-image" alt="White text over a black and grey grid that reads UI Grid Best Practices.">
-                                    </figure>
-                                        <h3 class="second-header">Best Practices for UI Design With Grids</h3>
-                                        <p class="smaller-padding">
-                                            A useful cheatsheet to remind yourself of UI best practices before you make your next wireframe.
-                                        </p>
-                                        <p class="bottom-padding">07.11.22</p>
-                                </a>    
-                            </section>
-                        </div>
-                    </div>
-        
-                    <div class="tertiary-stories-container">
-                        <h4 id="recents">Recent</h4>
-                        <section class="teaser-no-image">
-                            <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
-                        
-                            <a href="#">
-                                <h3 class="second-header">Why Your Grid Designs Are Wrong - And How To Fix It</h3>
-                                <p class="smaller-padding">
-                                    This one simple trick will make you a better designer!
-                                </p>
-                                <p class="section-end">07.11.22</p>
-                            </a>
-                        </section>
-                        
-                        <section class="teaser-no-image">
-                            <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
-                            <a href="#">
-                                <h3 class="second-header">Popular Grid System Fonts</h3>
-                                <p class="smaller-padding"> 
-                                    Want to know the top 3 Grid System fonts? Click here.
-                                </p>
-                                <p class="section-end">07.11.22</p>
-                            </a>
-                        </section>
-                        
-                        <section class="teaser-no-image">
-                            <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
-                            <a href="#">
-                                <h3 class="second-header">What Colors Are Consistent With the Style?</h3>
-                                <p class="smaller-padding">
-                                    Read this before making a color palette for your grid system project.
-                                </p>
-                                <p class="section-end">07.11.22</p>
-                            </a>
-                        </section>
-                        
-                        <section class="teaser-no-image">
-                            <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
-                            <a href="#">
-                                <h3 class="second-header">Use These Shapes When Making Your Designs</h3>
-                                <p class="smaller-padding">
-                                    You shouldn't use a trapezoid when making grid designs. Here's why.
-                                </p>
-                                <p class="section-end">07.11.22</p>
-                            </a>
-                        </section>
-                        
-                        <section class="teaser-no-image">
-                            <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
-                            <a href="#">
-                                <h3 class="second-header">How to Set Up a Grid Using InDesign</h3>
-                                <p class="smaller-padding">
-                                    Heres one simple InDesign trick that no one knows!
-                                </p>
-                                <p class="bottom-padding">07.11.22</p>
-                            </a>
-                        </section>
-                    </div>
-                    <!-- ★ You will need to replicate the sections above to have 8 to 12 stories in your page, with at least 4 of them with images. -->
 
-                </main>
+            <div class="tertiary-stories-container">
+                <h4 id="recents">Recent</h4>
+                <section class="teaser-no-image">
+                    <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
 
-                <footer>
-                    <p> All rights reserved.</p>
-                </footer>
+                    <a href="#">
+                        <h3 class="second-header">Why Your Grid Designs Are Wrong - And How To Fix It</h3>
+                        <p class="smaller-padding">
+                            This one simple trick will make you a better designer!
+                        </p>
+                        <p class="section-end">07.11.22</p>
+                    </a>
+                </section>
+
+                <section class="teaser-no-image">
+                    <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
+                    <a href="#">
+                        <h3 class="second-header">Popular Grid System Fonts</h3>
+                        <p class="smaller-padding">
+                            Want to know the top 3 Grid System fonts? Click here.
+                        </p>
+                        <p class="section-end">07.11.22</p>
+                    </a>
+                </section>
+
+                <section class="teaser-no-image">
+                    <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
+                    <a href="#">
+                        <h3 class="second-header">What Colors Are Consistent With the Style?</h3>
+                        <p class="smaller-padding">
+                            Read this before making a color palette for your grid system project.
+                        </p>
+                        <p class="section-end">07.11.22</p>
+                    </a>
+                </section>
+
+                <section class="teaser-no-image">
+                    <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
+                    <a href="#">
+                        <h3 class="second-header">Use These Shapes When Making Your Designs</h3>
+                        <p class="smaller-padding">
+                            You shouldn't use a trapezoid when making grid designs. Here's why.
+                        </p>
+                        <p class="section-end">07.11.22</p>
+                    </a>
+                </section>
+
+                <section class="teaser-no-image">
+                    <!-- ★ Example of a teaser without image.  You may want to give it a third class. -->
+                    <a href="#">
+                        <h3 class="second-header">How to Set Up a Grid Using InDesign</h3>
+                        <p class="smaller-padding">
+                            Heres one simple InDesign trick that no one knows!
+                        </p>
+                        <p class="bottom-padding">07.11.22</p>
+                    </a>
+                </section>
             </div>
-        </body>
-    </html>
+            <!-- ★ You will need to replicate the sections above to have 8 to 12 stories in your page, with at least 4 of them with images. -->
+        </main>
 
+        <footer>
+            <p>All rights reserved.</p>
+        </footer>
+    </div>
+</body>
 
+</html>
