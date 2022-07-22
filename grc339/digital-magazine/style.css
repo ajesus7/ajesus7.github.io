@@ -202,7 +202,7 @@ a {
 
 figure.photo-gallery-images {
     margin: 0;
-    width: calc(100%-2em);
+    width: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
@@ -211,18 +211,18 @@ figure.photo-gallery-images {
 main.gallery {
     position: relative;
     padding-bottom: calc(72% + 3em);
-    width: 50%;
+    max-width: 55%;
 }
 
 .thumbnails {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 0.2em;
-    width: 50%;
+    width: 55%;
 }
 
 .photo-gallery-callout {
-    width: 100%;
+    width: 70%;
 }
 
 #photo-gallery-index-header {
@@ -266,7 +266,7 @@ ul.newsletter {
     border: 2px solid #0d1321;
     padding: 2em;
     padding-bottom: 1.5em;
-    background: rgb(222, 222, 222);
+    background: rgb(240, 222, 222);
 }
 
 ul.newsletter li {
@@ -289,6 +289,7 @@ ul.newsletter li input[type="checkbox"] {
     margin-right: 0.5em;
     position: relative;
     top: 4px;
+    left: px;
 }
 
 ul.newsletter li label {
@@ -308,7 +309,6 @@ button {
 
 #form-filler {
     width: 60%;
-    height: auto;
 }
 
 /* Media Queries */
@@ -323,8 +323,23 @@ button {
         top: 2em;
         left: 4em;
     }
+
+    main.gallery {
+        padding-bottom: calc(76% + 3em);
+    }
 }
 
+@media only screen and (min-width: 41em) {
+    .newsletter-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1.5em;
+    }
+
+    #form-filler {
+        width: 100%;
+    }
+}
 @media only screen and (min-width: 48em) {
 
     div.container,
@@ -363,16 +378,6 @@ button {
         grid-column-gap: 1.5em;
     }
 
-    .newsletter-container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 1.5em;
-    }
-
-    #form-filler {
-        width: 80%;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width: 58em) {
