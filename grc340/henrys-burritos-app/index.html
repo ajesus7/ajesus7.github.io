@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!--Link to Adobe Fonts for styling-->
+        <link rel="stylesheet" href="https://use.typekit.net/bzz4wsb.css" />
+        <!--Title gets updated by JS file-->
+        <title>340 L4 ajnesbit</title>
+    </head>
+    <body>
+        <!--Main container holds all visible content-->
+        <main>
+            <!--Container one holds all content on the left of main container, all content but image-->
+            <div class="container-1">
+                <!--Refresh section contains a link to refresh page-->
+                <div class="refresh-section">
+                    <p><a href="#" id="reload-link">Reload</a> this page</p>
+                </div>
+                <!--Logo-box: A container to center the logo-->
+                <div class="logo-box">
+                    <img src="img/logo.svg" id="logo" alt="Henry's Burritos Logo" />
+                </div>
+                <!--Greeting Section is 'invisible until user presses the button, then class is changed to have green background'-->
+                <div class="greeting-section">
+                    <p id="greeting-output"></p>
+                </div>
+                <form>
+                    <!--Asks and takes in User's name-->
+                    <div class="name-section">
+                        <h3>Order Here</h3>
+                        <div class="name-input-container">
+                            <label for="username">Your Name</label>
+                            <input type="text" id="username" />
+                        </div>
+                    </div>
+                    <!--Section for user to select their size-->
+                    <div class="size-section">
+                        <h3>Size</h3>
+
+                        <!--Each size has a card for styling purposes-->
+                        <div class="size-input-container">
+                            <div class="card">
+                                <label for="size-0">Small</label>
+                                <input type="radio" name="size" value="small" id="size-0" checked />
+                            </div>
+
+                            <div class="card">
+                                <label for="size-1">Medium</label>
+                                <input type="radio" name="size" value="medium" id="size-1" />
+                            </div>
+
+                            <div class="card">
+                                <label for="size-2">Large</label>
+                                <input type="radio" name="size" value="large" id="size-2" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Section for user to select their sauce-->
+                    <div class="sauce-section">
+                        <h3>Sauce</h3>
+                        <!--Each sauce has a card for styling purposes-->
+                        <div class="sauce-input-container">
+                            <div class="card">
+                                <label for="mild">Mild</label>
+                                <input type="radio" name="sauce" value="mild" id="mild" />
+                            </div>
+
+                            <div class="card">
+                                <label for="spicy">Spicy</label>
+                                <input type="radio" name="sauce" value="spicy" id="spicy" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Section for user to select their toppings-->
+                    <div class="topping-section">
+                        <h3>Toppings</h3>
+                        <!--Each topping has a card for styling purposes (6)-->
+                        <div class="toppings-input-container">
+                            <div class="card">
+                                <label for="topping-1">Cheese</label>
+                                <input type="checkbox" name="topping" value="topping-1" id="topping-1" />
+                            </div>
+                            <div class="card">
+                                <label for="topping-2">Vegan Cheese</label>
+                                <input type="checkbox" name="topping" value="topping-2" id="topping-2" />
+                            </div>
+
+                            <div class="card">
+                                <label for="topping-3">Avocado</label>
+                                <input type="checkbox" name="topping" value="topping-3" id="topping-3" />
+                            </div>
+
+                            <div class="card">
+                                <label for="topping-4">Green Sauce</label>
+                                <input type="checkbox" name="topping" value="topping-4" id="topping-4" />
+                            </div>
+
+                            <div class="card">
+                                <label for="topping-5">Sour Cream</label>
+                                <input type="checkbox" name="topping" value="topping-5" id="topping-5" />
+                            </div>
+
+                            <div class="card">
+                                <label for="topping-6">Cilantro</label>
+                                <input type="checkbox" name="topping" value="topping-6" id="topping-6" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Button section to center button-->
+                    <div class="button-section">
+                        <button id="orderButton" type="button" onClick="main()">Submit Order</button>
+                    </div>
+                </form>
+            </div>
+            <!--Container 2 holds the burrito sign image-->
+            <div class="container-2">
+                <img id="burrito-sign" src="img/burrito-sign.jpg" alt="A neon sign that says Burritos on a brick wal " />
+            </div>
+        </main>
+
+        <!--Script tag to link to js file-->
+        <script src="js/script.js"></script>
+    </body>
+</html>

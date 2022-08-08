@@ -1,0 +1,207 @@
+/* CSS DOCUMENT */
+
+/* REMOVE DEFAULT STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    line-height: 1.2em;
+}
+
+/* END REMOVE DEFAULT STYLING */
+
+body {
+    font-family: "acuta", serif;
+    background: lightgray;
+}
+
+div {
+    padding: 0.9em;
+}
+
+input {
+    border: 1px solid gray;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    font-family: filmotype-maxwell, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Main Container Styling */
+
+main {
+    max-width: 60em;
+    margin: 2em;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+/*button styling */
+
+button {
+    background: #af322e;
+    border-radius: 10px;
+    padding: 0.7em;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+}
+
+#burrito-sign {
+    width: 120%;
+    position: relative;
+    bottom: 6em;
+    right: 3em;
+}
+
+/* Containers and Sections */
+
+.container-1,
+.container-2 {
+    padding: 0em;
+    margin: 0em;
+    height: 90vh;
+}
+
+.container-2 {
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.refresh-section {
+    display: flex;
+    justify-content: center;
+}
+
+.name-input-container {
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+}
+
+.size-input-container {
+    padding: 0em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.6em;
+}
+
+.sauce-input-container,
+.toppings-input-container {
+    padding: 0em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6em;
+}
+
+/* Logo and Cards */
+
+.card {
+    padding: 1em;
+    border-radius: 10px;
+    background: #90c06c;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 50%;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    padding: 0.25em;
+}
+
+/* Link Modifiers */
+
+.blueLink:link,
+.blueLink:visited,
+.blueLink:active {
+    color: #00f;
+}
+
+.blueLink:hover {
+    color: #00f;
+    text-shadow: 0.2em 0.2em 0.4em #bbb;
+}
+
+.name-input-container label {
+    padding-bottom: 0.5em;
+}
+
+/* User Greeting Modifiers */
+
+#greeting-output {
+    text-align: center;
+}
+
+#spicy-span,
+#chill-span {
+    font-weight: 800;
+    font-size: 1.25rem;
+    position: relative;
+    top: 1px;
+}
+
+#spicy-span {
+    color: #af322e;
+}
+
+#chill-span {
+    color: lightblue;
+}
+
+/* Makes background green once message is output */
+.greeting-section-green {
+    background: #90c06c;
+    margin: 1em 0em;
+}
+
+/* Media Query for slight responsiveness (img container is not) */
+
+@media only screen and (min-width: 63em) {
+    main {
+        margin: auto;
+        margin-top: 2em;
+    }
+}
