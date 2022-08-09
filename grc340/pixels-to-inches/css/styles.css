@@ -1,0 +1,116 @@
+/* CSS Document */
+
+/* Removes Default Styling */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+	line-height: 1;
+    background: #5760DB;
+    font-family: 'Inter', sans-serif;
+}
+
+/* General Styling */
+
+input, select {
+    border: 2px solid gray;
+    box-sizing: border-box;
+    width: 20em;
+    height: 3em;
+    border-radius: 10px;
+}
+
+label {
+    padding-bottom: 0.5em;
+    flex: 1 0 1em;
+    font-size: 1.25em;
+}
+
+main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 31em;
+    height: 35vh;
+    background: white;
+    margin: 1em;
+    padding-top: 0.5em;
+}
+
+.flex-container {
+    margin: auto;
+    max-width: 60em;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+
+h2, li {
+    margin-left: 3rem;
+}
+
+/* Styling for form, button, and list items */
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+#conversion {
+    padding-top: 1rem;
+    height: 2rem;
+    margin-top: 1rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#inches-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+button {
+    padding: 0.5em;
+    background: #5760DB;
+    color: white;
+    border-radius: 7px;
+    padding: .9em;
+    width: 20em;
+    margin-top: 2em;
+}
+
+button:hover {
+    background: #474FB3; 
+}
+
+/* Did not make responsive */
+
+@media only screen and (min-width: 36em) {
+    
+    main {
+        margin: auto;
+        margin-top: 1em;
+    }
+}

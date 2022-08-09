@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--Link to Google Fonts for styling-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>340 L3 ajnesbit</title>
+</head>
+<body>
+    <!--Main container used to center content in window-->
+    <main>
+        <h2>340 Lab 3 Aidan Nesbitt</h2>
+        <!--UL holds sections (li) which hold the results form JS file-->
+        <ul class="results">
+            <li>
+                <!--Each h3 is a question from the spec-->
+                <h3>A. Which players are on both rosters</h3>
+                <!--Each p tag is used to represent the information from the js file, in the HTML-->
+                <p id="result-a"></p>
+            </li>
+            <li>
+                <h3>B. Which players are unique to the 40 man roster?</h3>
+                <p id="result-b"></p>
+            </li>
+            <li>
+                <h3>C. What is the total count of unique players?</h3>
+                <p id="result-c"></p>
+            </li>
+            <li>
+                <h3>D. Sort <span id="italic">active</span> players in descending order</h3>
+                <p id="result-d"></p>
+            </li>
+            <li id="no-border">
+                <h3>E. After sorting players in "D" above, which player is 12th on the list?</h3>
+                <p id="result-e"></p>
+            </li>
+        </ul>
+    </main>
+
+    <!--script tag to link js file-->
+    <script src="js/script.js"></script>
+</body>
+</html>

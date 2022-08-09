@@ -1,0 +1,83 @@
+/* CSS DOCUMENT */
+
+/* REMOVE DEFAULT STYLING */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* END REMOVE DEFAULT STYLING */
+
+body {
+    line-height: 1.2em;
+    background: lightblue;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    max-width: 50em;
+    background: white;
+    border-radius: 10px;
+    margin: 0em 2em;
+    margin-top: 3em;
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+li {
+    margin: 0 2em 1em 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid lightgray;
+}
+
+h3 {
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+    font-weight: 800;
+    line-height: 1.2em;
+}
+
+/* IDs for styling */
+
+#no-border {
+    border-bottom: none;
+}
+
+#italic {
+    font-style: italic;
+}
+
+/* Media query for responsiveness */
+
+@media only screen and (min-width: 52em) {
+    main {
+        margin: auto;
+        margin-top: 3em;
+    }
+}
