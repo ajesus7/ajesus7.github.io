@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Link to Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>340 L5 ajnesbit - Form Validation</title>
+</head>
+<body>
+    <main>
+        <!--Login Page Container - Will Disappear once user completes it-->
+        <div class="login-container">
+            <form id="login">
+                <h3>Account Information</h3>
+                <div class="username-section">
+                    <label for="username" >Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="password-section">
+                    <label for="password" >Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="button-section">
+                    <button type="submit" id="login-button">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Update Information Container - Only appears when user completes login-->
+        <div id="update-information-container">
+            <!--only appears when user completes information upload-->
+            <div class="success-message-container">
+                <h2 id="success-message"></h2>
+            </div>
+            <form id="update-information">
+                <h3>Update Account Information</h3>
+                <div class="fname-section">
+                    <label for="fname" >Name</label>
+                    <input type="text" id="fname" required>
+                </div>
+                <div class="address-section">
+                    <label for="address" >Address</label>
+                    <input type="text" id="address">
+                </div>
+                <div class="city-section">
+                    <label for="city" >City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="state-section">
+                    <label for="state" >State</label>
+                    <input type="text" id="state">
+                </div>
+                <div class="zip-section">
+                    <label for="zip" >Zip</label>
+                    <input type="text" id="zip">
+                </div>
+                <!--pattern is captured in js for validation-->
+                <div class="email-section">
+                    <label for="email" >Email</label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" required>
+                </div>
+                <!--grid for styling-->
+                <div class="credit-section-grid">
+                    <!--pattern is captured in js for validation-->
+                    <div class="credit-section">
+                        <label for="credit" >Credit Card</label>
+                        <input type="tel" pattern="^\d{4} \d{4} \d{4} \d{4}$" maxlength="19" title="xxxx xxxx xxxx xxxx" id="credit">
+                    </div>
+                    <!--Text to determine what card brand-->
+                    <div class="credit-icon-section">
+                        <p id="credit-icon"></p>
+                    </div>                    
+                </div>
+                    <!--pattern is captured in js for validation-->
+                <div class="cell-section">
+                    <label for="cell">Cell</label>
+                    <input type="phone" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="xxx-xxx-xxxx" required>
+                </div>
+                <div class="button-section">
+                    <button type="submit" id="update-information-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--Link to js file-->
+    <script src="js/script.js"></script>
+</body>
+</html>
