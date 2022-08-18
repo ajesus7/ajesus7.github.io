@@ -1,0 +1,183 @@
+/* CSS DOCUMENT */
+
+/* REMOVE DEFAULT STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* END REMOVE DEFAULT STYLING */
+
+body {
+    line-height: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    background: rgb(245, 245, 245);
+}
+
+main {
+    max-width: 60em;
+    height: 100vh;
+    margin: 2em;
+    margin-top: 0;
+}
+
+h2 {
+    padding-top: 0.5em;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+
+input[type="text"] {
+    width: 2em;
+    height: 2em;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid rgb(220, 220, 220);
+    margin-right: 2em;
+    font-weight: 500;
+    background: rgb(252, 252, 252);
+    text-align: center;
+}
+
+/* Containers for flex and grid display styling */
+
+.main-form-holder {
+    background: rgb(252, 252, 252);
+    border: solid 2px rgb(220, 220, 220);
+    padding-bottom: 2em;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    height: 22vh;
+}
+
+.left-section-top-right-box,
+.left-section-bottom-right-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5em;
+}
+
+.left-section-top-left-box,
+.left-section-bottom-left-box {
+    width: 100%;
+    height: 5em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+.left-section-top-left-box {
+    padding-bottom: 1.5em;
+}
+
+.left-section-top-box,
+.left-section-bottom-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.item-1-row,
+.item-2-row,
+.final-price-row {
+    width: 100%;
+    height: 100%;
+}
+
+.item-1-price,
+.item-2-price {
+    margin-top: 0.4em;
+}
+
+.left-section-top-box {
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+
+.left-section {
+    width: 100%;
+}
+
+.right-section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    border-left: 2px solid rgb(220, 220, 220);
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+}
+
+/* END grid/flex display styling */
+
+/* text styling and padding */
+
+p.lorem-ipsum {
+    width: 80%;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.order-total-holder {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3em;
+}
+
+.your-order-holder h3,
+.your-total-holder h3 {
+    font-size: 1.5em;
+}
+
+.your-order-holder {
+    margin-left: 1.5em;
+}
+
+.your-total-holder {
+    margin-left: 4.2em;
+}
+
+#price-1-updater,
+#price-2-updater,
+#final-price-updater {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* FOR VERY SLIGHT RESPONSIVENESS */
+
+@media only screen and (min-width: 52em) {
+    main {
+        margin: auto;
+    }
+}
